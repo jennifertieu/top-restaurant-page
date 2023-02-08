@@ -1,0 +1,23 @@
+{
+  "name": "top-restaurant-page",
+  "version": "1.0.0",
+  "description": "The Odin Project Restaurant Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jennifertieuu/top-restaurant-page.git"
+  },
+  "author": "jteacodes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jennifertieuu/top-restaurant-page/issues"
+  },
+  "homepage": "https://github.com/jennifertieuu/top-restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
