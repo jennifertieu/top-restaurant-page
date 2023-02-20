@@ -4,7 +4,7 @@ export default function image(){
 
     const title = document.createElement("h1");
     title.textContent = "Yummy Sushi";
-    title.classList.add("title");
+    title.setAttribute("id", "title");
 
     const img = document.createElement("img");
     img.setAttribute("src", "./derek-duran-unsplash.jpg");
