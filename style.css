@@ -1,0 +1,58 @@
+@import url("normalize.css");
+#content {
+    display: flex;
+}
+
+#title {
+    position: absolute;
+}
+
+#image-section {
+    width: 50%;
+}
+
+#tab-section {
+    width: 50%;
+}
+
+#tab-container {
+    display: flex;
+    border-bottom: 1px solid #000;
+    list-style: none;
+    padding: 0;
+}
+
+.tab {
+    background-color: #fff;
+}
+
+.tab button {
+    border: 3px solid transparent;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 10px 20px;
+}
+
+.tab button:hover {
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.active-tab {
+    border: 1px solid #000 !important;
+    margin-bottom: -3px;
+}
+
+#home-tab-content,
+#menu-tab-content,
+#contact-tab-content {
+    padding: 1rem;
+}
+
+#menu-tab-content {
+    display: none;
+}
+
+#contact-tab-content {
+    display: none;
+}
