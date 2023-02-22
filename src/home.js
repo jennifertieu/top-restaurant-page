@@ -18,6 +18,7 @@ export default function home(){
     const hoursHeading = document.createElement("h1");
     hoursHeading.textContent = "Hours";
     const hoursContent = document.createElement("ul");
+    hoursContent.classList.add("hours-list");
     const hoursDetail = [
         "Monday-Thursday: 11:30am-3:00pm",
         "Friday-Saturday: 11:30am-11:00pm",
