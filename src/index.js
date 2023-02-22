@@ -62,6 +62,14 @@ homeTabContent.setAttribute("id", "home-tab-content");
 menuTabContent.setAttribute("id", "menu-tab-content");
 contactTabContent.setAttribute("id", "contact-tab-content");
 
+// set default content
+homeTabContent.classList.add("active-content");
+
+// set associated tab
+homeTabContent.dataset.tab = homeTabBtn.id;
+menuTabContent.dataset.tab = menuTabBtn.id;
+contactTabContent.dataset.tab = contactTabBtn.id;
+
 homeTabContent.appendChild(home());
 menuTabContent.appendChild(menu());
 contactTabContent.appendChild(contact());
@@ -74,6 +82,25 @@ tabSection.appendChild(tabContentContainer);
 
 content.appendChild(tabSection);
 
-function displayContent(){
-    return;
+function displayContent(event){
+    // set active tab
+    const activeTabs = document.querySelectorAll(".active-tab");
+    Array.from(activeTabs).forEach(function(elem){
+        // remove active class
+        elem.classList.remove("active-tab");
+    })
+    event.target.classList.add("active-tab");
+
+    // remove old content
+    const activeContent = document.querySelectorAll(".active-content")
+    activeContent.forEach(function(elem){
+        elem.classList.remove("active-content");
+    })
+    
+    const tabContent = document.querySelectorAll(".tab-content")
+    tabContent.forEach(function(elem){
+        if (elem.dataset.tab === event.target.id){
+            elem.classList.add("active-content");
+        }
+    })
 }
