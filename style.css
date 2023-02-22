@@ -1,0 +1,93 @@
+@import url("normalize.css");
+#content {
+    display: flex;
+}
+
+#title {
+    position: absolute;
+    text-shadow: 2px 2px 5px #fff;
+}
+
+#image-section {
+    width: 50%;
+}
+
+#tab-section {
+    width: 50%;
+    margin: 0 1rem;
+}
+
+#tab-container {
+    display: flex;
+    border-bottom: 1px solid #000;
+    list-style: none;
+    padding: 0;
+}
+
+.tab {
+    background-color: #fff;
+}
+
+.tab button {
+    background: 0 0; 
+    border: 1px solid transparent;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: -1px;
+}
+
+.tab button:hover {
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.active-tab {
+    background-color: #fff !important;
+    border-color: #000 #000 transparent !important;
+}
+
+#home-tab-content,
+#menu-tab-content,
+#contact-tab-content {
+    padding: 1rem;
+    display: none;
+}
+
+.active-content {
+    display: block !important;
+}
+
+/* Home */
+.hours-list {
+    list-style: none;
+    padding: 0;
+}
+
+.hours-list li {
+    padding: 5px 0;
+}
+
+/* Menu */
+.menu-items {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-items li {
+    padding: 5px 0;
+}
+
+.menu-name {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+/* Contact */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
