@@ -13,6 +13,7 @@
 
 #tab-section {
     width: 50%;
+    margin: 0 1rem;
 }
 
 #tab-container {
@@ -27,10 +28,12 @@
 }
 
 .tab button {
-    border: 3px solid transparent;
+    background: 0 0; 
+    border: 1px solid transparent;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     padding: 10px 20px;
+    margin-bottom: -1px;
 }
 
 .tab button:hover {
@@ -39,20 +42,33 @@
 }
 
 .active-tab {
-    border: 1px solid #000 !important;
-    margin-bottom: -3px;
+    background-color: #fff !important;
+    border-color: #000 #000 transparent !important;
 }
 
 #home-tab-content,
 #menu-tab-content,
 #contact-tab-content {
     padding: 1rem;
-}
-
-#menu-tab-content {
     display: none;
 }
 
-#contact-tab-content {
-    display: none;
+.active-content {
+    display: block !important;
+}
+
+/* Menu */
+.menu-items {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-items li {
+    padding: 5px 0;
+}
+
+.menu-name {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
 }
