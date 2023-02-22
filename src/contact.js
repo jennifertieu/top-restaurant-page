@@ -13,7 +13,8 @@ export default function contact(){
     contactInfo.classList.add("contact-info");
     const phone = document.createElement("div");
     phone.textContent = "123-456-7890";
-    const email = document.createElement("div");
+    const email = document.createElement("a");
+    email.setAttribute("href", "mailto:contact@yummysushi.com");
     email.textContent = "contact@yummysushi.com";
     contactInfo.appendChild(phone);
     contactInfo.appendChild(email);
