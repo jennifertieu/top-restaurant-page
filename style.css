@@ -5,6 +5,7 @@
 
 #title {
     position: absolute;
+    text-shadow: 2px 2px 5px #fff;
 }
 
 #image-section {
@@ -57,6 +58,16 @@
     display: block !important;
 }
 
+/* Home */
+.hours-list {
+    list-style: none;
+    padding: 0;
+}
+
+.hours-list li {
+    padding: 5px 0;
+}
+
 /* Menu */
 .menu-items {
     list-style: none;
@@ -71,4 +82,12 @@
     display: flex;
     justify-content: space-between;
     font-weight: 600;
+}
+
+/* Contact */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
 }
